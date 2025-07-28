@@ -77,7 +77,7 @@ export const AppProvider = ({ children }) => {
   };
 
   const updateKoi = (id, updatedKoi) => {
-    setKoiData(prev => prev.map(koi => 
+    setKoiData(prev => prev.map(koi =>
       koi.id === id ? { ...koi, ...updatedKoi } : koi
     ));
   };
