@@ -39,10 +39,10 @@ const Footer = () => {
               <span className="text-xl font-bold">Asyifa Koi Farm</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              Menyediakan ikan koi premium berkualitas tinggi dengan pelayanan terbaik 
+              Menyediakan ikan koi premium berkualitas tinggi dengan pelayanan terbaik
               untuk para penghobi koi di seluruh Indonesia.
             </p>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
@@ -71,10 +71,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  
+                  <a
                     href={link.href}
                     className="text-gray-300 hover:text-white transition-colors duration-200"
-                    <a>{link.name}</a>
+                  >
+                    {link.name}
+                  </a>
                 </li>
               ))}
             </ul>

@@ -113,7 +113,7 @@ const ContactSection = () => {
           >
             <div className="rounded-2xl overflow-hidden shadow-2xl h-96">
               <img
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop"
+                src="https://images.unsplash.com/photo-1746931594975-286a2209e5ff?w=800&h=600&fit=crop"
                 alt="Asyifa Koi Farm Location"
                 className="w-full h-full object-cover"
               />

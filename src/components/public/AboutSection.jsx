@@ -78,7 +78,7 @@ const AboutSection = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1520637736862-4d197d17c953?w=800&h=600&fit=crop"
+                src="https://images.unsplash.com/photo-1521584934521-f27ac11b7523?w=800&h=600&fit=crop"
                 alt="Asyifa Koi Farm"
                 className="w-full h-96 object-cover"
               />

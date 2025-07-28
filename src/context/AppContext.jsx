@@ -40,8 +40,8 @@ export const AppProvider = ({ children }) => {
           breeder: 'Maruyama',
           description: 'Kohaku berkualitas premium dengan pola hi yang sangat bagus dan shiroji yang bersih putih. Ikan ini memiliki potensi tumbuh menjadi juara kontes.',
           images: [
-            'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800',
-            'https://images.unsplash.com/photo-1520637836862-4d197d17c953?w=800'
+            'https://plus.unsplash.com/premium_photo-1723672584731-52b5f1a67543?w=800',
+            'https://plus.unsplash.com/premium_photo-1723672584706-42c474c77fd1?w=800'
           ],
           slug: 'kohaku-premium-a1-45cm'
         },
@@ -56,8 +56,8 @@ export const AppProvider = ({ children }) => {
           breeder: 'Dainichi',
           description: 'Sanke dari bloodline juara dengan kombinasi warna yang sempurna. Sumi berkualitas tinggi dengan bentuk tubuh yang ideal.',
           images: [
-            'https://images.unsplash.com/photo-1554919012-6ba4c12b1595?w=800',
-            'https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=800'
+            'https://images.unsplash.com/photo-1517361265-3bd77c6f1689?w=800',
+            'https://images.unsplash.com/photo-1640529837996-b81a91eaf7a5?w=800'
           ],
           slug: 'sanke-champion-line-38cm'
         }
