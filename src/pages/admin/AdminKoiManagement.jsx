@@ -28,7 +28,7 @@ const AdminKoiManagement = () => {
   const [statusFilter, setStatusFilter] = useState('all');
   const [showForm, setShowForm] = useState(false);
   const [editingKoi, setEditingKoi] = useState(null);
-  const [deleteKoi, setDeleteKoi] = useState(null);
+  const [koiToDelete, setKoiToDelete] = useState(null);
   const [selectedKoi, setSelectedKoi] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(10);
@@ -69,7 +69,7 @@ const AdminKoiManagement = () => {
   };
 
   const handleDeleteKoi = (koi) => {
-    setDeleteKoi(koi);
+    setKoiToDelete(koi); 
   };
 
   const handleFormSubmit = (koiData) => {
@@ -90,9 +90,9 @@ const AdminKoiManagement = () => {
   };
 
   const handleDeleteConfirm = () => {
-    if (deleteKoi) {
-      deleteKoi(deleteKoi.id);
-      setDeleteKoi(null);
+    if (koiToDelete) {
+      deleteKoi(koiToDelete.id);
+      setKoiToDelete(null);
     }
   };
 
@@ -245,11 +245,11 @@ const AdminKoiManagement = () => {
 
       {/* Delete Confirmation Modal */}
       <AnimatePresence>
-        {deleteKoi && (
+        {koiToDelete && (
           <DeleteConfirmModal
-            koi={deleteKoi}
+            koi={koiToDelete}
             onConfirm={handleDeleteConfirm}
-            onCancel={() => setDeleteKoi(null)}
+            onCancel={() => setKoiToDelete(null)}
           />
         )}
       </AnimatePresence>
