@@ -16,7 +16,8 @@ const Navbar = () => {
 
   const handleNavClick = (href) => {
     if (href.includes('#')) {
-      const element = document.querySelector(href.split('#')[1]);
+      const elementId = href.split('#')[1];
+      const element = document.getElementById(elementId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -44,19 +45,15 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <motion.a
+              <motion.button
                 key={item.name}
-                href={item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(item.href);
-                }}
+                onClick={() => handleNavClick(item.href)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
               >
                 {item.name}
-              </motion.a>
+              </motion.button>
             ))}
           </div>
 
@@ -84,17 +81,13 @@ const Navbar = () => {
           >
             <div className="px-4 py-2 space-y-1">
               {navItems.map((item) => (
-                
+                <button
                   key={item.name}
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick(item.href);
-                  }}
-                  className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200"
+                  onClick={() => handleNavClick(item.href)}
+                  className="block w-full text-left px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md transition-colors duration-200"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
             </div>
           </motion.div>

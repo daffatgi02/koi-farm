@@ -74,9 +74,7 @@ const Footer = () => {
                   
                     href={link.href}
                     className="text-gray-300 hover:text-white transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
+                    <a>{link.name}</a>
                 </li>
               ))}
             </ul>
